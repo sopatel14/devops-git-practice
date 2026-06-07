@@ -105,3 +105,54 @@ git log --oneline
 ```bash
 git diff
 ```
+
+## Branching Commands
+
+### git branch
+
+**What it does:** Lists all local branches and highlights the current branch.
+
+```bash
+git branch
+```
+
+### git branch <branch-name>
+
+**What it does:** Creates a new branch without switching to it.
+
+```bash
+git branch feature-1
+```
+
+### git switch <branch-name>
+
+**What it does:** Switches from the current branch to another existing branch.
+
+```bash
+git switch feature-1
+```
+
+### git switch -c <branch-name>
+
+**What it does:** Creates a new branch and immediately switches to it.
+
+```bash
+git switch -c feature-2
+```
+
+### git branch -d <branch-name>
+
+**What it does:** Deletes a local branch that has already been merged.
+
+```bash
+git branch -d feature-2
+```
+
+### git push -u origin <branch-name>
+
+**What it does:** Pushes a branch to GitHub and sets the upstream tracking branch.
+
+```bash
+git push -u origin feature-1
+```
+
