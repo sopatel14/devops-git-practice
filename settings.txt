@@ -1,2 +1,3 @@
 Settings Page
 Theme Settings
+Notification Settings
