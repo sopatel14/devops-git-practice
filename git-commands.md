@@ -156,3 +156,109 @@ git branch -d feature-2
 git push -u origin feature-1
 ```
 
+## Advanced Git Commands (Merge, Rebase, Stash & Cherry-Pick)
+
+### git merge <branch-name>
+
+**What it does:** Merges another branch into the current branch.
+
+```bash
+git merge feature-login
+```
+
+### git merge --squash <branch-name>
+
+**What it does:** Combines all commits from a branch into a single commit before merging.
+
+```bash
+git merge --squash feature-profile
+```
+
+### git rebase <branch-name>
+
+**What it does:** Replays the current branch commits on top of another branch, creating a cleaner history.
+
+```bash
+git rebase main
+```
+
+### git log --oneline --graph --all
+
+**What it does:** Displays a compact visual representation of commit history across all branches.
+
+```bash
+git log --oneline --graph --all
+```
+
+### git log --oneline --graph --all --decorate
+
+**What it does:** Displays commit history along with branch names, tags, and HEAD references.
+
+```bash
+git log --oneline --graph --all --decorate
+```
+
+### git stash
+
+**What it does:** Temporarily saves uncommitted changes and restores a clean working directory.
+
+```bash
+git stash
+```
+
+### git stash push -m "<message>"
+
+**What it does:** Saves uncommitted changes with a descriptive message.
+
+```bash
+git stash push -m "login work"
+```
+
+### git stash list
+
+**What it does:** Lists all saved stashes.
+
+```bash
+git stash list
+```
+
+### git stash pop
+
+**What it does:** Restores the latest stash and removes it from the stash list.
+
+```bash
+git stash pop
+```
+
+### git stash apply
+
+**What it does:** Restores a stash without removing it from the stash list.
+
+```bash
+git stash apply
+```
+
+### git stash apply stash@{n}
+
+**What it does:** Restores a specific stash from the stash list.
+
+```bash
+git stash apply stash@{1}
+```
+
+### git cherry-pick <commit-hash>
+
+**What it does:** Applies a specific commit from another branch to the current branch.
+
+```bash
+git cherry-pick 4a2f111
+```
+
+### git rebase --continue
+
+**What it does:** Continues the rebase process after resolving conflicts.
+
+```bash
+git rebase --continue
+```
+

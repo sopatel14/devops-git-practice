@@ -1,5 +1,0 @@
-Profile Page
-Fix typo
-Formatting
-Validation
-Cleanup
