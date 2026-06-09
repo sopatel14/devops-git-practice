@@ -1,6 +1,0 @@
-Commit X
-<<<<<<< HEAD
-Commit Y
-Commit Z
-=======
->>>>>>> parent of 008ea74 (Commit Y)
