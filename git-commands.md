@@ -262,3 +262,30 @@ git cherry-pick 4a2f111
 git rebase --continue
 ```
 
+git reset --mixed HEAD~1
+
+**What it does:** Removes the latest commit and unstages the changes while keeping them in the working directory.
+
+git reset --mixed HEAD~1
+git reset --hard HEAD~1
+
+**What it does:** Removes the latest commit and permanently deletes all associated changes.
+
+git reset --hard HEAD~1
+git reset HEAD <file>
+
+**What it does:** Unstages a file without removing any changes from the working directory.
+
+git reset HEAD notes.md
+git revert <commit-hash>
+
+**What it does:** Creates a new commit that reverses the changes introduced by a previous commit.
+
+git revert abc1234
+git reflog
+
+**What it does:** Displays a history of all HEAD movements and reference updates, including resets, rebases, and recoverable commits.
+
+git reflog
+
+This matches the exact format of your existing `git-commands.md` sections.
