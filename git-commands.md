@@ -289,3 +289,295 @@ git reflog
 git reflog
 
 This matches the exact format of your existing `git-commands.md` sections.
+
+
+GitHub CLI Commands
+
+## gh auth login
+
+**What it does:** Authenticates GitHub CLI with your GitHub account.
+
+```bash
+gh auth login
+```
+
+---
+
+## gh auth status
+
+**What it does:** Displays the currently authenticated GitHub account and authentication status.
+
+```bash
+gh auth status
+```
+
+---
+
+## gh auth logout
+
+**What it does:** Logs out the current GitHub CLI session.
+
+```bash
+gh auth logout
+```
+
+---
+
+## gh repo create
+
+**What it does:** Creates a new GitHub repository directly from the terminal.
+
+```bash
+gh repo create my-repo --public --add-readme
+```
+
+---
+
+## gh repo clone
+
+**What it does:** Clones a GitHub repository using GitHub CLI.
+
+```bash
+gh repo clone sopatel14/devops-git-practice
+```
+
+---
+
+## gh repo list
+
+**What it does:** Lists repositories owned by the authenticated user.
+
+```bash
+gh repo list
+```
+
+---
+
+## gh repo view
+
+**What it does:** Displays repository details from the terminal.
+
+```bash
+gh repo view
+```
+
+---
+
+## gh repo delete
+
+**What it does:** Deletes a GitHub repository (requires delete_repo permission).
+
+```bash
+gh repo delete sopatel14/gh-test-repo
+```
+
+---
+
+## gh issue create
+
+**What it does:** Creates a new issue in the current repository.
+
+```bash
+gh issue create --title "Test Issue" --body "Created using GitHub CLI"
+```
+
+---
+
+## gh issue list
+
+**What it does:** Lists issues in the repository.
+
+```bash
+gh issue list
+```
+
+---
+
+## gh issue view
+
+**What it does:** Displays details of a specific issue.
+
+```bash
+gh issue view 1
+```
+
+---
+
+## gh issue close
+
+**What it does:** Closes an issue by issue number.
+
+```bash
+gh issue close 1
+```
+
+---
+
+## gh pr create
+
+**What it does:** Creates a pull request from the current branch.
+
+```bash
+gh pr create --fill
+```
+
+---
+
+## gh pr list
+
+**What it does:** Lists pull requests for a repository.
+
+```bash
+gh pr list
+```
+
+---
+
+## gh pr view
+
+**What it does:** Displays details of a pull request.
+
+```bash
+gh pr view
+```
+
+---
+
+## gh pr diff
+
+**What it does:** Shows changes included in a pull request.
+
+```bash
+gh pr diff 1
+```
+
+---
+
+## gh pr checkout
+
+**What it does:** Checks out a pull request locally.
+
+```bash
+gh pr checkout 1
+```
+
+---
+
+## gh pr review
+
+**What it does:** Reviews a pull request by approving, commenting, or requesting changes.
+
+```bash
+gh pr review 1 --approve
+```
+
+---
+
+## gh pr merge
+
+**What it does:** Merges a pull request from the terminal.
+
+```bash
+gh pr merge 1 --squash
+```
+
+---
+
+## gh run list
+
+**What it does:** Lists GitHub Actions workflow runs.
+
+```bash
+gh run list
+```
+
+---
+
+## gh run view
+
+**What it does:** Displays details of a workflow run.
+
+```bash
+gh run view <run-id>
+```
+
+---
+
+## gh workflow list
+
+**What it does:** Lists workflows configured in a repository.
+
+```bash
+gh workflow list
+```
+
+---
+
+## gh workflow view
+
+**What it does:** Displays details of a workflow.
+
+```bash
+gh workflow view <workflow-name>
+```
+
+---
+
+## gh api
+
+**What it does:** Makes raw GitHub API requests directly from the terminal.
+
+```bash
+gh api user
+```
+
+---
+
+## gh gist create
+
+**What it does:** Creates a GitHub Gist from a file.
+
+```bash
+gh gist create notes.txt
+```
+
+---
+
+## gh gist list
+
+**What it does:** Lists your GitHub Gists.
+
+```bash
+gh gist list
+```
+
+---
+
+## gh release create
+
+**What it does:** Creates a GitHub release and tag.
+
+```bash
+gh release create v1.0.0
+```
+
+---
+
+## gh alias set
+
+**What it does:** Creates a shortcut for frequently used GitHub CLI commands.
+
+```bash
+gh alias set prs "pr list"
+```
+
+---
+
+## gh search repos
+
+**What it does:** Searches GitHub repositories from the terminal.
+
+```bash
+gh search repos devops
+```
+
